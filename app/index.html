@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8"/>
+    <title>AngularJS</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="vendor/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="css/ng-cloak.css" rel="stylesheet"/>
+
+    <!-- JS adding hear -->
+    <!-- libs and frameworks -->
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- app -->
+    <script src="app.js"></script>
+    <script src="mainController/Main.js"></script>
+    <script src="header/header.js"></script>
+    <script src="footer/footer.js"></script>
+    <script src="login/Login.js"></script>
+    <script src="services/loginService.js"></script>
+    <script src="services/videoStore.js"></script>
+    <script src="dashboard/dashboard.js"></script>
+    <script src="dashboard/video_Add_and_Search/videoAddController.js"></script>
+    <script src="dashboard/video_Add_and_Search/videoAddDirective.js"></script>
+    <script src="dashboard/listVideoCollection/listVideoCollection.js"></script>
+    <!-- end JS adding -->
+
+    <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak {display: none !important;}[contenteditable] {border: 1px solid black;background-color: white;min-height: 20px;}</style>
+</head>
+<body>
+<div class="container" ng-controller="main">
+
+    <!-- include Header -->
+    <div class="row" header></div>
+
+    <!--<div video-add-controller></div>-->
+
+    <div ui-view></div>
+
+</div>
+
+<!-- include Footer -->
+<div class="row" footer></div>
+</body>
+</html>
