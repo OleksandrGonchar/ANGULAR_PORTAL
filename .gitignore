@@ -1,0 +1,10 @@
+node_modules
+.tmp
+.idea
+Capture
+bower_components
+build
+id_rsa
+id_rsa.pub
+optional .json
+app/vendor/
