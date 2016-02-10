@@ -20,7 +20,7 @@ module.exports = function(config) {
       'app/vendor/angular-resource/angular-resource.js',
       'app/app.js',
       'app/services/**/*.js',
-      'app/login/video-catalog.login.js',
+      'app/login/video-catalog.login.controller.js',
       'test/**/*.js'
     ],
 

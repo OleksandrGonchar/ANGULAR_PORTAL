@@ -31,7 +31,10 @@
             .state('dashboard', {
                 url: '/dashboard',
                 templateUrl: 'dashboard/video-catalog.dashboard.html',
-                controller: 'video-catalog.dashboard.controller'
+                controller: 'video-catalog.dashboard.controller',
+                ncyBreadcrumb: {
+                    label: 'Dashboard'
+                }
             })
             .state('dashboard.addForm', {
                 url: '/addNewVideo',

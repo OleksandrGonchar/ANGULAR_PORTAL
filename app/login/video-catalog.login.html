@@ -6,14 +6,13 @@
     <!-- Login form -->
     <div class="col-sm-8 col-sm-offset-2 jumbotron">
         <form class="form-horizontal">
-            <div ng-class="{ 'has-error': validatePassword(loginval)}" class="form-group">
+            <div ng-class="{ 'has-error': !loginval}" class="form-group">
                 <label class="control-label col-sm-2"  for="login">Login:</label>
                 <div class="col-sm-10">
                     <input ng-model="loginval" type="text" class="form-control" id="login" placeholder="Enter email">
                 </div>
-                <div ng-show="validatePassword(loginval)" class="col-sm-12 form-control-label">Are your sure?</div>
             </div>
-            <div  ng-class="{ 'has-error': validatePassword(loginPass)}" class="form-group">
+            <div  ng-class="{ 'has-error': !loginPass}" class="form-group">
                 <label class="control-label col-sm-2" for="inputPassword">Password:</label>
                 <div class="col-sm-10">
                     <input  ng-model="loginPass"  type="password" class="form-control" id="inputPassword" placeholder="Enter password">
