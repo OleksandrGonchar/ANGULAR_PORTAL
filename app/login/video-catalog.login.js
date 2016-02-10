@@ -11,7 +11,6 @@
 
         function log() {
             if (loginService.setLogined($scope.loginval, $scope.loginPass)) {
-                //console.log(loginService.getCurrentUser());
                 $state.go('dashboard');
             }
         }

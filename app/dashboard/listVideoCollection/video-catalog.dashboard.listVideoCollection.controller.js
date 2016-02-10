@@ -23,7 +23,5 @@
         $scope.$watch('videoCollection', function () {
             saveVideo();
         }, true);
-
-        console.log($scope.videoCollection);
     }
 })();

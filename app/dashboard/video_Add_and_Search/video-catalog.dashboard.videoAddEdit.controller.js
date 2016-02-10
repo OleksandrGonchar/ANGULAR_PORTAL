@@ -2,8 +2,9 @@
     "use strict";
 
     angular.module("video-catalog.dashboard.videoAddEdit.controller", [])
-        .controller("videoAddEditController", ["$scope", "$stateParams", "videoStore", "$state", videoAddController]);
+        .controller("videoAddEditController", videoAddController);
 
+    videoAddController.$inject = ["$scope", "$stateParams", "videoStore", "$state"];
     function videoAddController($scope, $stateParams, videoStore, $state) {
         var id = $stateParams.id,
             oldVideoItem;
