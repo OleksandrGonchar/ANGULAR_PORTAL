@@ -3,10 +3,13 @@
         <div class="col-sm-12>">
             <div class="row">
                 <div class="col-sm-10">
-                    <h3 class="col-sm-8">
+                    <h3 class="col-sm-6">
                         {{item.name}}
                     </h3>
-                    <b class="col-sm-2 help-block">{{item.duration}}</b>
+                    <b class="col-sm-4 help-block">
+                        <span>{{(item.duration/60).toFixed(0)}} Hours</span>
+                        <span>{{item.duration%60}} Minutes</span>
+                    </b>
                     <b class="col-sm-2 help-block">{{item.date | date: "dd.mm.yyyy"}}</b>
                     <div class="col-sm-12">
                         {{item.description}}
