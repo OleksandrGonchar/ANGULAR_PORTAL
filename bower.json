@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Example",
   "authors": [
-    "Vitaliy Zhyrytskyy"
+    "Oleksandr Gonchar"
   ],
   "license": "MIT",
   "ignore": [
@@ -19,7 +19,8 @@
     "bootstrap": "~3.3.5",
     "angular-ui-router": "ui-router#~0.2.17",
     "angular-modal-service": "~0.6.9",
-    "angular-animate": "~1.5.0"
+    "angular-animate": "~1.5.0",
+    "angular-breadcrumb": "~0.4.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.9",
