@@ -5,7 +5,7 @@
         .controller("videoAddEditController", videoAddController);
 
     videoAddController.$inject = ["$scope", "$stateParams", "videoStore", "$state"];
-    function videoAddController($scope, $stateParams, videoStore, $state) {
+    function videoAddController($scope, $stateParams, videoStore) {
         var id = $stateParams.id,
             oldVideoItem;
 
@@ -21,7 +21,7 @@
         }
 
         $scope.search = function () {
-
+            console.log($scope.searchValue);
         };
 
         $scope.addVideo = function () {

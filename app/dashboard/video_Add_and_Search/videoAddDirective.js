@@ -7,7 +7,8 @@
     function videoAddDirective() {
         return {
             restrict: "A",
-            templateUrl: "dashboard/video_Add_and_Search/videoAddController.html"
+            templateUrl: "dashboard/video_Add_and_Search/videoAddController.html",
+            controller: "videoAddEditController"
         }
     }
 })();
