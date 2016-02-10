@@ -8,9 +8,6 @@
     function Login($scope, $state, loginService) {
 
         $scope.log = log;
-        $scope.validatePassword = function(){
-
-        };
 
         function log() {
             if (loginService.setLogined($scope.loginval, $scope.loginPass)) {
