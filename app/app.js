@@ -36,17 +36,26 @@
             .state('dashboard.addForm', {
                 url: '/addNewVideo',
                 templateUrl: 'dashboard/video_Add_and_Search/addForm/addForm.html',
-                controller: 'videoAddEditController'
+                controller: 'videoAddEditController',
+                ncyBreadcrumb: {
+                    label: 'Add new video'
+                }
             })
             .state('dashboard.refactorForm', {
                 url: "/refactorForm/{id:[0-9a-fA-F]{1,8}}",
                 templateUrl: 'dashboard/video_Add_and_Search/addForm/addForm.html',
-                controller: 'videoAddEditController'
+                controller: 'videoAddEditController',
+                ncyBreadcrumb: {
+                    label: 'Refactoring video'
+                }
             })
             .state('dashboard.list', {
                 url: '/list',
                 templateUrl: 'dashboard/listVideoCollection/video-catalog.dashboard.listVideoCollection.html',
-                controller: 'listVideoCollection.controller'
+                controller: 'listVideoCollection.controller',
+                ncyBreadcrumb: {
+                    label: 'Video collection'
+                }
             });
 
         /* default wey */
