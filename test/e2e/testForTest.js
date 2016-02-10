@@ -1,3 +1,4 @@
+/*
 describe('This test for tests', function () {
     "use strict";
 
@@ -12,6 +13,7 @@ describe('This test for tests', function () {
             $rootScope = $injector.get('$rootScope');
             $scope = $rootScope.$new();
             controller = $injector.get('$controller')('pieController', {$scope: $scope});
+            console.log(controller);
         })
     });
 
@@ -37,3 +39,4 @@ describe('This test for tests', function () {
     })
 });
 
+*/

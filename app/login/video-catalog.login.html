@@ -1,0 +1,32 @@
+<!-- begin Login page -->
+<div class="login-page row">
+    <h1>Don`t work</h1>
+
+
+    <!-- Login form -->
+    <div class="col-sm-8 col-sm-offset-2 jumbotron">
+        <form class="form-horizontal">
+            <div ng-class="{ 'has-error': validatePassword(loginval)}" class="form-group">
+                <label class="control-label col-sm-2"  for="login">Login:</label>
+                <div class="col-sm-10">
+                    <input ng-model="loginval" type="text" class="form-control" id="login" placeholder="Enter email">
+                </div>
+                <div ng-show="validatePassword(loginval)" class="col-sm-12 form-control-label">Are your sure?</div>
+            </div>
+            <div  ng-class="{ 'has-error': validatePassword(loginPass)}" class="form-group">
+                <label class="control-label col-sm-2" for="inputPassword">Password:</label>
+                <div class="col-sm-10">
+                    <input  ng-model="loginPass"  type="password" class="form-control" id="inputPassword" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button ng-click="log()" type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- end Login form -->
+
+</div>
+<!-- end Login page -->

@@ -15,29 +15,29 @@
 
     <!-- app -->
     <script src="app.js"></script>
-    <script src="mainController/Main.js"></script>
-    <script src="header/header.js"></script>
-    <script src="footer/footer.js"></script>
-    <script src="login/Login.js"></script>
-    <script src="services/loginService.js"></script>
-    <script src="services/videoStore.js"></script>
-    <script src="dashboard/dashboard.js"></script>
-    <script src="dashboard/video_Add_and_Search/videoAddController.js"></script>
+    <script src="header/video-catalog.header.directive.js"></script>
+    <script src="footer/video-catalog.footer.directive.js"></script>
+    <script src="login/video-catalog.login.js"></script>
+    <script src="services/video-catalog.login.service.js"></script>
+    <script src="services/video-catalog.videoStore.Service.js"></script>
+    <script src="dashboard/video-catalog.dashboard.js"></script>
+    <script src="dashboard/video_Add_and_Search/video-catalog.dashboard.videoAddEdit.controller.js"></script>
     <script src="dashboard/video_Add_and_Search/videoAddDirective.js"></script>
-    <script src="dashboard/listVideoCollection/listVideoCollection.js"></script>
+    <script src="dashboard/listVideoCollection/video-catalog.dashboard.listVideoCollection.controller.js"></script>
     <!-- end JS adding -->
 
-    <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak {display: none !important;}[contenteditable] {border: 1px solid black;background-color: white;min-height: 20px;}</style>
+    <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak {display: none !important;}[contenteditable] {border: 1px solid black;background-color: white;min-height: 20px;}body{padding-bottom: 60px}</style>
 </head>
 <body>
-<div class="container" ng-controller="main">
+<div class="container">
 
-    <!-- include Header -->
+    <!-- begin Header -->
     <div class="row" header></div>
+    <!-- end Header -->
 
-    <!--<div video-add-controller></div>-->
-
-    <div ui-view></div>
+    <!-- begin Main App View -->
+    <div ui-view class="container"></div>
+    <!-- end Main App View -->
 
 </div>
 

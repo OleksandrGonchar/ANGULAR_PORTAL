@@ -1,0 +1,25 @@
+<div class="col-sm-12">
+    <div class="table-bordered row" ng-repeat="item in videoCollection track by $index">
+        <div class="col-sm-12>">
+            <div class="row">
+                <div class="col-sm-10">
+                    <h3 class="col-sm-8">
+                        {{item.name}}
+                    </h3>
+                    <b class="col-sm-2 help-block">{{item.duration}}</b>
+                    <b class="col-sm-2 help-block">{{item.date}}</b>
+                    <div class="col-sm-12">
+                        {{item.description}}
+                    </div>
+                </div>
+                <div class="col-sm-2 help-block">
+                    <a class="btn btn-primary row" ng-click="change(this)"
+                       ui-sref="dashboard.refactorForm({id:{{this.$index}}})">Redact</a>
+                </div>
+                <div class="col-sm-2 help-block">
+                    <button class="btn btn-primary row" ng-click="delete(this.$index)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

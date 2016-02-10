@@ -19,10 +19,9 @@ module.exports = function(config) {
       'app/vendor/angular-mocks/angular-mocks.js',
       'app/vendor/angular-resource/angular-resource.js',
       'app/app.js',
-      'app/controllers/**/*.js',
-      'app/directives/**/*.js',
       'app/services/**/*.js',
-      'test/e2e/**/*.js'
+      'app/login/video-catalog.login.js',
+      'test/**/*.js'
     ],
 
 
