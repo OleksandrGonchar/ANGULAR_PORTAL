@@ -12,6 +12,10 @@
         function log() {
             if (loginService.setLogined($scope.loginval, $scope.loginPass)) {
                 $state.go('dashboard');
+            } else {
+                alert("Trust me! this is Angular Modal \n" +
+                    "Try to enter login:\"test\"\n" +
+                    "With pass:\"test\"" );
             }
         }
     }
