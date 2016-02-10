@@ -20,8 +20,6 @@
             $scope.duration = oldVideoItem.duration;
         }
 
-        console.log($state);
-
         $scope.search = function () {
 
         };

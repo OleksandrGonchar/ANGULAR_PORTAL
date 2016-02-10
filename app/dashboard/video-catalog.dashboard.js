@@ -2,9 +2,10 @@
     "use strict";
 
     angular.module("video-catalog.dashboard", [])
-        .controller("video-catalog.dashboard.controller", ["$state", "loginService", dashboard]);
+        .controller("video-catalog.dashboard.controller", dashboardController);
 
-    function dashboard($state, loginService) {
+    dashboardController.$inject = ["$state", "loginService"];
+    function dashboardController($state, loginService) {
 
         if (loginService.isLogined()) {
             $state.go('.list');
